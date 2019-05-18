@@ -1,0 +1,79 @@
+#logo{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(34,34,34);     font-family: monospace;
+}
+#main{
+    background-color: #222222;
+}
+#games{
+    border-width: 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: whitesmoke;
+}
+.column {
+    border: solid;
+    margin: 3px;
+    border-color: whitesmoke;
+  float: left;
+  width: 29.8%;
+  padding: 5px;
+}
+#dla{
+    width: 40%;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+    border: solid;
+    text-align: center;
+    padding: 30px;
+    display: block;
+}
+h3{
+    text-align: center;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 34px;
+}
+#boxFlip{
+    background-color: rgb(51,51,51);
+    padding-bottom: 20px;
+}
+#paperCutter{
+     background-color: rgb(254,197,6);
+    padding-bottom: 20px;
+}
+#bounceUp{
+    padding-bottom: 20px;
+}
+#dlb{
+    width: 40%;
+    position: relative;
+    left: 25%;
+    right: 30%;
+    color: black;
+    border: solid;
+    text-align: center;
+    padding: 30px;
+    display: block;
+    margin: 10px;
+}
+hr{
+    color: rgb(0,0,0,0);
+}
+h4{
+    text-align: center;
+    color: whitesmoke;
+    font-family: monospace;
+}
