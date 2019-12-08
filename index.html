@@ -2,95 +2,38 @@
     <head>
         <title>Clarosapps</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
     </head>
     <body>
+        <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#bcon">Games</a></li>
+  <li><a href="#contacts">Contact</a></li>
+</ul>
     <div class="container" id="main">
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img src="Logo.jpg" id = "logo" style="width:100%">
-          </div>          
-          <div class="mySlides fade">
-              <div class="container" id = "games">
-            <div class="row">
-              <h3>Games: </h3>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <a href="#bounceUp">
-                    <img src="bounce%20up%20logo.png" alt="Snow" style="width:100%">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#boxFlip">
-                    <img src="boxflip%20logo.png" alt="Forest" style="width:100%">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#paperCutter">
-                    <img src="paper%20cutter%20logo.png" alt="Mountains" style="width:100%">
-                    </a>
-                </div>                
-            </div>
-      </div>
+            <img src="Logo2.jpg" id = "logo" style="width:100%">
           </div>
-          <div class="mySlides fade" id="bounceUp">
-            <img src="Bounce%20UP.jpg" id = "logo" style="width:100%">
-              <h2><a href = "https://play.google.com/store/apps/details?id=com.Clarosapps.BounceUp" id = "dla">Download Now!</a></h2>
+         <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="BounceUp" id=bcon>
+              </div>
+            <img src="bounceUp.jpg" id = "bounceUp" style="width:100%">
+              <a href="https://play.google.com/store/apps/details?id=com.Clarosapps.BounceUp"><img src ="Google-Play-Icon.png" id="GP"/></a>
+              <a href="https://apps.apple.com/ph/app/bounce-up/id1476421307"><img src="ios-app-badge-fd60a24e3e78e27dcb40a055bcc4240d.png" id ="A"/></a>
           </div>
-          <div class="mySlides fade"id="boxFlip">
-            <img src="BoxFlip.jpg" id = "logo" style="width:100%">
-            <h2><a href = "https://play.google.com/store/apps/details?id=com.clarosapps.boxflip" id = "dla">Download Now!</a></h2>
-          </div>          
-           <div class="mySlides fade"id="paperCutter">
-            <img src="paper%20cutter.jpg" id = "logo" style="width:100%">
-            <h2><a href = "https://play.google.com/store/apps/details?id=com.Clarosapps.PaperCutter" id = "dlb">Download Now!</a></h2>
-          </div>
-            <div class = "mySlides">
-                <h3>Contact Details:</h3>
-                <h4>Email: clarosapps@gmail.com</h4>                <h4>Mobile Number: +639699765317</h4>                <h4><a href = "bfpp.html">BoxFlip Privacy Policy</a></h4>
+            <hr>
+            <div class = "mySlides" id = "contacts">
+                <h3>contact details:</h3>
+                <h4>email: clarosapps@gmail.com</h4>                <h4>mobile number: +639699765317</h4>                <h4><a href = "bfpp.html">boxFlip privacy policy</a></h4>
                 
             </div>
           <!-- Next and previous buttons -->
         </div>
     </div>
-        <script>
-        $('a[href*="#"]')
-          // Remove links that don't actually link to anything
-          .not('[href="#"]')
-          .not('[href="#0"]')
-          .click(function(event) {
-            // On-page links
-            if (
-              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-              && 
-              location.hostname == this.hostname
-            ) {
-              // Figure out element to scroll to
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-              // Does a scroll target exist?
-              if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 1000, function() {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) { // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  };
-                });
-              }
-            }
-          });
-        </script>
     </body>
 </html>

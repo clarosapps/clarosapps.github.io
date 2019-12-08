@@ -1,16 +1,17 @@
 #logo{
     width: 100%;
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(34,34,34);     font-family: monospace;
+    background-color: #141517;
+    font-family: 'Major Mono Display', monospace;
 }
 #main{
-    background-color: #222222;
+    background-color: #141517;
 }
 #games{
     border-width: 1px;
@@ -29,51 +30,64 @@ body{
   width: 29.8%;
   padding: 5px;
 }
-#dla{
-    width: 40%;
-    position: relative;
-    margin-left: 30%;
-    margin-right: 30%;
-    color: white;
-    border: solid;
-    text-align: center;
-    padding: 30px;
-    display: block;
-}
 h3{
+    text-decoration: none;
     text-align: center;
     color: whitesmoke;
-    font-family: monospace;
-    font-size: 34px;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 24px;
 }
-#boxFlip{
-    background-color: rgb(51,51,51);
-    padding-bottom: 20px;
-}
-#paperCutter{
-     background-color: rgb(254,197,6);
-    padding-bottom: 20px;
-}
-#bounceUp{
-    padding-bottom: 20px;
-}
-#dlb{
-    width: 40%;
-    position: relative;
-    left: 25%;
-    right: 30%;
-    color: black;
+#contacts{
     border: solid;
-    text-align: center;
-    padding: 30px;
-    display: block;
-    margin: 10px;
+    border-color: whitesmoke;
 }
 hr{
-    color: rgb(0,0,0,0);
+    margin-t
+    color: rgb(1,255,0.1,0);
+    margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+#GP{
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    display: block;
+}
+#bcon{
+    position: relative;
+}
+#A{
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+    width: 35%;
+    display: block;
 }
 h4{
     text-align: center;
     color: whitesmoke;
-    font-family: monospace;
+    font-size: 12px;
+    font-family: 'Major Mono Display', monospace;
 }
